@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:focusableInTouchMode="true"
+    android:id="@+id/main_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="180dp"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="25dp"
+                android:textStyle="bold"
+
+                android:layout_marginTop="20dp"
+                android:typeface="sans"
+                android:text="Profile"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_name"
+                    android:hint="Name"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:padding="13dp"
+                    android:typeface="sans"
+
+                    android:singleLine="true"
+                    android:textSize="15dp"
+                    app:hintTextColor="@color/black"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_email"
+                    android:hint="Email"
+
+                    android:padding="13dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    android:layout_marginTop="5dp"
+
+                    android:singleLine="true"
+                    app:hintTextColor="@color/black"
+                    />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_mobile"
+                    android:hint="Mobile Number"
+
+                    android:fontFamily="@font/open_sans_regular"
+                    android:inputType="number"
+                    app:hintTextColor="@color/black"
+                    android:padding="13dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="sans"
+
+                    android:textSize="15dp"
+
+                    android:singleLine="true"
+                    />
+
+
+                <EditText
+                    android:id="@+id/txt_current_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans_regular"
+
+                    android:hint="Current Address"
+                    android:padding="13dp"
+                    android:singleLine="true"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    app:passwordToggleEnabled="true" />
+
+                <Button
+                    android:id="@+id/btn_change_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:hint="Change System Setting"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:hint="Logout"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onLoginClick"/>
+
+</LinearLayout>
