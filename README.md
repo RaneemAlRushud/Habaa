@@ -36,4 +36,4 @@ and taking the guardianship of and responsibility for a pet that a previous owne
 <h2> 💡 Technology Stack:</h2>
 
 <h2> 💡 Future Consideration:</h2>
-<li> :one: Because of the Android components limitation,the UI and app identity(color, icon .. etc) need to be enhanced in the next release </li>
+<li> :one: Because of the Android components limitation, the UI and app identity(color, icon .. etc) need to be enhanced in the next release. </li>
